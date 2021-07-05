@@ -7,19 +7,8 @@ $("#myRange1").change(function() {
  $("#myRange2").change(function() {
  $('#input2').val($('#myRange2').val());
 });
-
-/* $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
- */
-
- //не стал подключать, т.к. календарь работает без Datepicker
-
-
 $("form").submit(function(event){
 	event.preventDefault();
-/* 	alert("OK"); 
-	/* var myData = JSON.stringify(this); */
 	$.ajax ({
 		url: "/calc.php",
 		type: "post",
@@ -27,7 +16,6 @@ $("form").submit(function(event){
 		processData: false,
 		cache: false,
 		success: (function (data) {
-/* 			alert(data);		 */
 		    value1=JSON.parse(data);
 			$('#result').html(value1+" руб");
 		}),
