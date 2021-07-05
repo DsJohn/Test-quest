@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
   <meta charset="UTF-8"/>
-  <TITLE>Test</TITLE>
+  <TITLE>Bank</TITLE>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="jquery-3.3.1.min.js"></script>
   <script src="script.js"></script>
